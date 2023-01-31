@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap');
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+body
+{
+    background-image: url('bg1.jpg') ;
+    background-repeat: repeat;
+    background-size: 100%;
+    
+}
+
+.gallery {
+     width: 30%;
+     height: 30%;
+}
+.startBtn, .adminBtn, .homeBtn
+{
+    background-color: black;
+    font-size: 25px;
+    border-radius: 80px;
+    padding: 20px;
+    margin: 20px;
+    transition: 100ms;
+    /* opacity: 0.80 !important;  */
+    
+    /* height: 100px;
+    width: 250px; */
+    display: inline-block;
+    border: 2px solid green;
+}
+#mainDiv
+{
+    width: 80pv;
+    height: 80vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.85;
+    margin-top: 21rem;
+    /* margin-bottom: 5rem; */
+    border: 5px solid silver;
+    
+    border-width: 0px;
+	border-image: none;
+    margin: 0px;
+    /* background-color: red; */
+}
+#mainBody
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+#quiz, #panelInner
+{
+    width: 800px;
+    height: 400px;
+    /* background-color: #fff; */
+    display: grid;
+    grid-template-rows: 60px auto;
+    border-radius: 30px;
+    background-color: black;
+    border: 2px solid pink;
+}
+#panelInner
+{
+    height: 550px;
+    width: 1200px;
+    grid-template-rows: 60px auto 62px;
+}
+#quizHeader, #header, #addBtnDiv
+{
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    color: aliceblue;
+}
+#quizHeader
+{
+    width: 800px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(211, 209, 209);
+}
+#header
+{
+    justify-content: center;
+}
+#quizBody
+{
+    color: rgb(211, 209, 209);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+}
+#timer
+{
+    color: white;
+    padding: 18px;
+    background-color:black;
+    margin-right: 350px;
+    border-top-right-radius: 27px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.option_group{
+    margin-left: 0;
+    padding-left: 0;
+}
+li
+{
+    list-style-type: none;
+}
+.option, .optionPanel
+{
+    border: 3px solid transparent;
+    border-radius: 50px;
+    background-color: rgb(24, 24, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    margin: 10px 10px 10px 0;
+    min-height: 42px;
+    transition: 500ms;
+}
+.option:hover
+{
+    cursor: pointer;
+    border: 3px solid red;
+}
+.nxtBtn, .rstBtn
+{
+    background-color: red ;
+    border-radius: 50px ;
+    padding: 15px ;
+    border: none ;
+    float: right;
+}
+.active
+{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    margin: 10px 10px 10px 0;
+    color: white;
+    background-color: red;
+    border: 3px solid red;
+    transition: 500ms;
+}
+.exitBtn
+{
+    color: white;
+    background-color: black;
+    /* border-radius: 50px !important; */
+    width: 200px;
+    height: 70px;
+    margin-bottom: 10px;
+    font-size: x-large ;
+}
+.nxtBtn:focus, .exitBtn:focus, .rstBtn:focus, .startBtn:focus, .adminBtn:focus, .homeBtn:focus
+{
+    outline: none ;
+    box-shadow: none ;
+}
+.nxtBtn:hover, .exitBtn:hover, .rstBtn:hover, .startBtn:hover, .adminBtn:hover, .homeBtn:hover
+{
+    background-color: white ;
+    color: red t;
+    transition: 500ms;
+}
+/* =================Admin Panel================ */
+.lbLogin {
+    color: aliceblue;
+    font-size: 2rem;
+    
+}
+.btnLogin{
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    opacity: 0.85;
+    color: black;
+    font-size: large;
+    font-weight: normal;
+}
+#username, #password{
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    background-color: black;
+    opacity: 0.75;
+    color: white;
+    font-size: large;
+    font-weight: normal;
+}
+.btnLogin:hover{
+    cursor: pointer;
+    border: 3px solid red;
+}
+#adminLogin {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    background-color: black;
+    height: 300px;
+    width: 470px;
+    border-radius: 15px;
+
+}
+#mainPanel
+{
+    width: 1000px;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    padding: 400px 0px;
+}
+#questionsBody
+{
+    background-color: rgb(188, 167, 167);
+    padding: 10px 20px;
+    overflow-y: auto;/*when we'll add questions then scroll bar will be needed*/
+}
+#delAllBtn, #addBtn
+{
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 15px 18px;
+    margin: 1px 30px;
+}
+#addBtnDiv
+{
+    height: 65px;
+    justify-content: center;
+    box-shadow: 0 -2px 5px 1px rgba(157, 24, 24, 0.3);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.homeBtn
+{
+    right: 60%;
+    position: fixed;
+    top: 40vh;
+    padding: 30px 50px t;
+}
+.panelLi
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 42px;
+    align-items: center;
+    margin: 10px;
+}
+.liBtnAdd, .liBtnCancel, .liBtn
+{
+    font-size: 25px ;
+    border-radius: 50% ;
+    padding: 10px 12px ;
+    margin: 0 20px;
+    max-height: 50px;
+}
+.liBtnAdd
+{
+    padding: 10px ;
+}
+.liBtnCancel
+{
+    padding: 10px 13px ;
+}
+.option_group{
+    font-weight: 800;
+}
